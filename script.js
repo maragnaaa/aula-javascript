@@ -1,43 +1,33 @@
-const idade = 17;
+let num = 1;
 
-if (idade >= 18) {
-    console.log("Maior de idade");
-} else {
-    console.log("Menor de idade");  
+while (num <= 10) {
+    console.log(num);
+    num++;
 }
 
-const senhaTeste = "1234"
-
-const mensagem = senhaTeste === "1234"
-    ? "Senha correta"
-    : "Senha incorreta";
-
-    console.log(mensagem);
-
-const nota = 7;
-
-if (nota >= 9) {
-    console.log("Excelente");
-} else if (nota >= 7) {
-    console.log("Aprovado");
-} else {
-    console.log("Reprovado");
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
 }
 
-const logado = true;
-const admin = true;
-
-if (logado && admin) {
-    console.log("Admin liberado");   
-} else {
-    console.log("Acesso negado");
+for (let j = 0; j <= 20; j += 2) { 
+    console.log(j);
 }
 
-const usuario = "admin";
-const senha = "123";
+const acess = 3;
 
-if (usuario === "admin" && senha === "123") {
-    console.log("Login realizado");
-} else {
-    console.log("Acesso negado");
+switch (acess) {
+    case 1:
+        console.log("Admin");
+        break;
+    case 2:
+        console.log("User");
+        break;
+    case 3:
+        console.log("Guest");
+        break;
 }
+
+for (let x = 1; x <= 10; x++) {
+    console.log(`5 x ${x} = ${5 * x}`);
+}
+
